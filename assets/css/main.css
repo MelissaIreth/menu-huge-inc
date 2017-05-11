@@ -40,6 +40,22 @@ nav {
 	background: #ec008c;
 	transition: all 0.3s;
 }
+.menu:before, .menu:after{
+	content: "";
+	display: block;
+	width: 24px;
+	height: 4px;
+	background: #ec008c;
+	position: absolute;
+	z-index: -1;
+}
+
+.menu:before{
+	top: -8px;
+}
+.menu:after{
+	top: 8px;
+}
 
 #toggle:hover .menu:before {
 	top: -9px;
